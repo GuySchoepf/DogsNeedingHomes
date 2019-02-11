@@ -1,0 +1,256 @@
+/*Common elements*/
+body {
+    font-size: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(86, 121, 218);
+    background-size: 100% 100%;
+    padding: 5px;
+    margin: 20px;
+    -webkit-background-size: 100% 100%;
+    -o-background-size: 100% 100%
+}
+
+h1 {
+    color: silver;
+    font-size: 4.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+
+}
+h2 {
+    color: purple;
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #555;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+a, a:visited {
+    color: lightseagreen;
+}
+a:hover {
+    color: darkorange;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+div.clear {
+    clear:both;
+    font-size: 1%
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+/*Header*/
+header {
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    background: rgba(223, 230, 235, 0.541);
+    border-radius: 1.6em;
+}
+header h1 {
+    font-family: "Times New Roman", 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 7.5em;
+    letter-spacing: 0.025em;
+    margin: 0 -10em 0 0;
+    /*text-shadow: 1px 2px 0 #bd8437; offset-x | offset-y | blur-radius | color */ 
+}
+header h2 {
+    font-weight: 220;
+    font-size: 3.9em;
+    color: rgb(70, 43, 169);
+    margin:  0 0 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+/*Nav Bars*/
+nav {
+    color: #000;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0;
+    border-radius: 1.6em;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: #271d1b;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color: rgb(34, 91, 198);
+    background-color: rgba(18, 231, 71, 0.815);
+}
+nav#utilityMenu {
+    float: right;
+    margin: -3.5em -8.0em 0 1.5em;
+    padding: 0.35em;
+    background-color: rgba(148, 144, 150, 0.993);
+    height: 2.0em;
+}
+nav#utilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: middle;
+}
+nav#utilityMenu ul li.acctNav a, nav#utilityMenu ul li.acctNav a:visited {
+    color: rgb(17, 17, 15);
+    text-decoration: none;
+    display: inline-block;
+    height: 2.3em;
+    padding: 0.5em;
+    margin: -2.4em 0 0 0;
+    font-size: 0.8em;
+}
+nav#utilityMenu ul li.acctNav a.active {
+    background-color: #C64322;
+}
+nav#utilityMenu ul li.acctNav a:hover {
+    background-color: rgba(202, 83, 15, 0.925);
+    color: rgb(17, 13, 241);
+}
+nav#utilityMenu li a, nav#utilityMenu li a:visited { padding: 0;}
+nav#utilityMenu li a:hover { background-color: transparent;}
+nav#utilityMenu ul li input#search {
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before {
+    content: "| ";
+    color: rgb(99, 194, 35);
+}
+/*Sidebar Section*/
+section#sidebar {
+    width: 438px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    margin: 1.5em 0 3.0em 1.5em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: rgb(152, 197, 233) solid 5px;
+    border-radius: 1.6em;
+}
+
+/*Main Section*/
+section #main {
+    /*background-color: #FCFBE6;*/
+    background-color: rgba(243, 23, 16, 0.7);
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px rgba(189, 211, 230, 0.473);/* offset-x | offset-y | blur-radius | color */
+}
+section div.panel{
+    float: left;
+    position: relative;
+    width: 1000px;
+    margin: 1.0em 0.5em 2.0em 0.5em;
+    padding: 2.0em;
+    background-color: #fff;
+    border: #ccc solid 1px;
+    border-radius: 1.6em;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/*Footer*/
+footer {
+
+    background-color: #40362f;
+    height: 35px;
+    font-size: 1.2em;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1.5em 1.0em;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
